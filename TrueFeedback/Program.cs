@@ -111,7 +111,7 @@ public class Program
                     .AllowAnyHeader()
                     .AllowAnyMethod()
                     .AllowCredentials()
-                    .WithOrigins("https://itemvaultlegin.z13.web.core.windows.net"); 
+                    .WithOrigins("http://localhost:4200"); 
             });
         });
         builder.Services.AddScoped<IRepository<Guid, User>, UserRepository>();
